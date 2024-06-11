@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра в пары</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <section class="game">
+      <h1 class="title title__hero">Игра в пары</h1>
+      <ul class="game__list-form list-reset flex">
+        <li class="game__item-form">
+          <p class="game__item-form-descr">
+            Выберите количество пар
+          </p>
+          <select id="pairs-input" class="game__item-form--input">
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+          </select>
+        </li>
+        <li class="game__item-form">
+          <p class="game__item-form-descr">
+            Введите время не более 300 сек
+          </p>
+          <input id="game-timer-input" class="game__item-form--input" type="number" placeholder="Таймер (сек) 1 минута по умол.">
+        </li>
+        <li class="game__item-form">
+          <p class="game__item-form-descr game__item-form-descr--hidden">
+            Кнопка начать
+          </p>
+          <button id="start-button" class="btn-form">Начать</button>
+        </li>
+      </ul>
+      <div class="content__timer">
+        <span class="timer" id="timer">Время: 1:00</span>
+      </div>
+      <div class="game__card flex">
+        <ul class="game__list game__list--show list-reset flex" id="game-list"></ul>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+@media (max-width: 1430px) {
+
+  .title__hero {
+    margin-bottom: 35px;
+  }
+
+  .game__list-form {
+    margin-bottom: 40px;
+  }
+
+  .game__card {
+    padding: 20px 150px 20px 150px;
+  }
+
+  .game__list {
+    gap: 50px;
+    row-gap: 30px;
+  }
+
+  .game__item-card {
+    width: 120px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  .game__card {
+    padding: 20px 100px 20px 100px;
+  }
+
+  .title__hero {
+    font-size: 40px;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .game__card {
+    padding: 20px 30px 20px 30px;
+  }
+
+  .game__list {
+    gap: 10px;
+    row-gap: 30px;
+  }
+
+  .game__item-card {
+    width: 100px;
+    height: 130px;
+  }
+
+  .game__item-card:nth-child(2n+1).game__card--appearance, .game__card-image-one{
+    background-image: url('../img/card-svg1.svg');
+    background-size: 70px 70px;
+  }
+
+  .game__item-card:nth-child(2n+2).game__card--appearance, .game__card-image-two{
+    background-image: url('../img/card-svg2.svg');
+    background-size: 70px 70px;
+  }
+
+  .game__item-card:nth-child(2n+3).game__card--appearance, .game__card-image-three{
+    background-size: 70px 70px;
+  }
+
+}
+
+@media (max-width: 572px) {
+
+  .game__card {
+    padding: 10px 10px 10px 10px;
+  }
+
+
+  .game__item-card {
+    width: 100px;
+    height: 120px;
+  }
+
+  .game__item-card:nth-child(2n+1).game__card--appearance, .game__card-image-one{
+    background-image: url('../img/card-svg1.svg');
+    background-size: 50px 50px;
+  }
+
+  .game__item-card:nth-child(2n+2).game__card--appearance, .game__card-image-two{
+    background-image: url('../img/card-svg2.svg');
+    background-size: 50px 50px;
+  }
+
+  .game__item-card:nth-child(2n+3).game__card--appearance, .game__card-image-three{
+    background-size: 50px 50px;
+  }
+}
+
